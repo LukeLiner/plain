@@ -430,6 +430,35 @@ body{
   margin:0 10px 0 7px;
 }
 /*底部版权 结束*/
+/*水平导航样式开始*/
+.horizontal{
+  border-bottom:1px solid #DDD9DA;
+}
+.horizontal ul{
+  overflow:hidden;
+}
 
+.horizontal ul li {
+  float: left;
+  width: 341px;
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+
+}
+.horizontal ul li a{
+  display:block;
+  font-size:18px;
+  text-decoration:none;
+  color:#B3B3B3;
+  line-height: 64px;
+}
+
+.horizontal ul li.current a {
+  line-height: 62px;
+  color: #85C9AB;
+  border-bottom: 3px solid;
+}
+/*水平导航样式开始*/
 
 
