@@ -101,28 +101,27 @@ body{
 /*banner 开始*/
 .banner{
   height:450px;
-  background:url(../images/cooperationbanner.jpg) no-repeat center top;
+  background:url(../images/vip_01.jpg) no-repeat center top;
   position:relative;
 }
 /*banner 结束*/
-
-/*渠道列表 开始*/
-#shop{
+/*商店列表 开始*/
+#vip{
   border-bottom:1px solid #DDD9DA;
 }
-#shop ul{
+#vip ul{
   overflow:hidden;
 }
 
-#shop ul li {
+#vip ul li {
   float: left;
-  width: 256px;
+  width: 512px;
   height: 64px;
   text-align: center;
   line-height: 64px;
 
 }
-#shop ul li a{
+#vip ul li a{
   display:block;
   font-size:18px;
   text-decoration:none;
@@ -130,7 +129,7 @@ body{
   line-height: 64px;
 }
 
-#shop ul li.current a {
+#vip ul li.current a {
   line-height: 62px;
   color: #85C9AB;
   border-bottom: 3px solid;
@@ -158,89 +157,48 @@ div.detail {
 }
 
 div.detail h2{
-  position:relative;
-  display:inline-block;
-  line-height:28px;
-  margin-bottom:20px;
   font-size:24px;
   color:#85C9AB;
+  line-height:28px;
+  margin-bottom:20px;
 }
 
 div.detail h2 b{
   color:#194488;
 }
 
-div.detail h2 i{
-  position:absolute;
-  right:-34px;
-  top:3px;
-  width:24px;
-  height:24px;
-  background:url("../images/cooperationArrow.jpg") no-repeat;
-}
-
 div.detail p{
-  height:20px;
+  font-size:14px;
+  margin-bottom:21px;
   line-height:20px;
   text-align:justify;
 }
 
-div.detail div.web p{
-  font-size:14px;
-  margin-bottom:26px;
+#vip_service{
+  overflow:hidden;
 }
 
-div.detail div.support{
-  margin-left:15px;
-  width:986px;
+#vip_service ul li{
+  float:left;
+  width:240px;
+  height:185px;
+  margin-top:57px;
+  text-align:center;
 }
 
-div.detail div.support p{
-  font-size:16px;
-  margin-bottom:23px;
-  position:relative;
+#vip_service ul li.first{
+  margin-left:33px;
 }
 
-div.detail div.support p i{
-  position:absolute;
-  left:-13px;
-  width:15px;
-  height:24px;
-
+#vip_service ul li.middle{
+  margin:57px 74px 0 74px;
 }
 
-div.detail div.support p.one i{
-   background:url("../images/cooperationOne.jpg") no-repeat;
- }
-div.detail div.support p.two i{
-  background:url("../images/cooperationtTwo.jpg") no-repeat;
+#vip_service ul li p{
+  font-size:12px;
+  text-align:center;
+  margin-top:26px;
 }
-div.detail div.support p.three i{
-  background:url("../images/cooperationThree.jpg") no-repeat;
-}
-div.detail div.support p.four i{
-  background:url("../images/cooperationFour.jpg") no-repeat;
-}
-div.detail div.support p.five i{
-  background:url("../images/cooperationFive.jpg") no-repeat;
-}
-div.detail div.support p.six i{
-  background:url("../images/cooperationSix.jpg") no-repeat;
-}
-div.detail>div{
-  margin-bottom:55px;
-}
-
-div.detail img{
-  display:block;
-  width:968px;
-  margin-top:37px;
-}
-/*渠道列表结束*/
-
-
-
-
 /*底部版权 开始*/
 #share{
   overflow:hidden;
