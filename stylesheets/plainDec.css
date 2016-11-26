@@ -1,0 +1,28 @@
+
+.primary {
+    display: inline;
+    float: left;
+    width: 42.18%;
+}
+.secondary {
+    display: inline;
+    width: 51.26%;
+    margin-left: 20px;
+}
+.wrapper .title1,.title2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.wrapper .title1 {
+    color: #194488;
+}
+.wrapper .title2{
+    color: #84CBAD;
+}
+.capital {
+    margin-top: 55px;
+}
+.content {
+  margin-top: 20px;
+  margin-bottom: 89px;
+}
