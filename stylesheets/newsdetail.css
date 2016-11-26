@@ -101,44 +101,14 @@ body{
 /*banner 开始*/
 .banner{
   height:450px;
-  background:url(../images/cooperationbanner.jpg) no-repeat center top;
+  background:url(../images/newsdetail_banner.jpg) no-repeat center top;
   position:relative;
 }
 /*banner 结束*/
-
-/*渠道列表 开始*/
-#shop{
-  border-bottom:1px solid #DDD9DA;
-}
-#shop ul{
-  overflow:hidden;
-}
-
-#shop ul li {
-  float: left;
-  width: 256px;
-  height: 64px;
-  text-align: center;
-  line-height: 64px;
-
-}
-#shop ul li a{
-  display:block;
-  font-size:18px;
-  text-decoration:none;
-  color:#B3B3B3;
-  line-height: 64px;
-}
-
-#shop ul li.current a {
-  line-height: 62px;
-  color: #85C9AB;
-  border-bottom: 3px solid;
-}
-
+/*新闻详情 开始*/
 div.info{
   overflow:hidden;
-  margin:0 29px 38px 27px;
+  margin:0 29px 20px 27px;
 }
 
 div.bread_crumb{
@@ -152,95 +122,43 @@ div.info a{
   font-size:14px;
   color:#4D4D4D;
 }
-
-div.detail {
-  float:left;
+#news_detail div.news_title{
+  text-align:center;
+  height:39px;
+  border-bottom:1px solid #EFEFEF;
+  margin-bottom:32px;
 }
-
-div.detail h2{
-  position:relative;
-  display:inline-block;
-  line-height:28px;
-  margin-bottom:20px;
+#news_detail div.news_title h2{
   font-size:24px;
-  color:#85C9AB;
+  line-height:28px;
+  color:#4D4D4D;
+  display:inline-block;
+}
+#news_detail div.news_title div{
+  margin-right:29px;
 }
 
-div.detail h2 b{
-  color:#194488;
-}
-
-div.detail h2 i{
-  position:absolute;
-  right:-34px;
-  top:3px;
-  width:24px;
-  height:24px;
-  background:url("../images/cooperationArrow.jpg") no-repeat;
-}
-
-div.detail p{
-  height:20px;
+div.news_content p,.news_content h4{
   line-height:20px;
-  text-align:justify;
-}
-
-div.detail div.web p{
   font-size:14px;
-  margin-bottom:26px;
+  color:#4D4D4D;
+  text-align:justify;
+  font-weight:normal;
+  margin:0 29px;
+}
+div.news_content h4.special{
+  margin-top:26px;
 }
 
-div.detail div.support{
-  margin-left:15px;
-  width:986px;
+#close{
+  overflow:hidden;
+  margin:36px 29px;
 }
-
-div.detail div.support p{
-  font-size:16px;
-  margin-bottom:23px;
-  position:relative;
+#close div.change{
+  overflow:hidden;
+  margin-top:13px;
 }
-
-div.detail div.support p i{
-  position:absolute;
-  left:-13px;
-  width:15px;
-  height:24px;
-
-}
-
-div.detail div.support p.one i{
-   background:url("../images/cooperationOne.jpg") no-repeat;
- }
-div.detail div.support p.two i{
-  background:url("../images/cooperationtTwo.jpg") no-repeat;
-}
-div.detail div.support p.three i{
-  background:url("../images/cooperationThree.jpg") no-repeat;
-}
-div.detail div.support p.four i{
-  background:url("../images/cooperationFour.jpg") no-repeat;
-}
-div.detail div.support p.five i{
-  background:url("../images/cooperationFive.jpg") no-repeat;
-}
-div.detail div.support p.six i{
-  background:url("../images/cooperationSix.jpg") no-repeat;
-}
-div.detail>div{
-  margin-bottom:55px;
-}
-
-div.detail img{
-  display:block;
-  width:968px;
-  margin-top:37px;
-}
-/*渠道列表结束*/
-
-
-
-
+/*新闻详情 结束*/
 /*底部版权 开始*/
 #share{
   overflow:hidden;
