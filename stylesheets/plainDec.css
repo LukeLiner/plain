@@ -1,4 +1,17 @@
 
+.horizontal-width ul li {
+    width: 241px;
+}
+div.bread_crumb{
+    float:right;
+    margin:22px 0 16px 0;
+}
+div.info a {
+    line-height: 18px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #4D4D4D;
+}
 .primary {
     display: inline;
     float: left;
@@ -21,8 +34,22 @@
 }
 .capital {
     margin-top: 55px;
+    margin-bottom: 20px;
 }
-.content {
+.info {
   margin-top: 20px;
   margin-bottom: 89px;
 }
+
+/*导航 结束*/
+/*banner 开始*/
+.banner-dec{
+    height:445px;
+    background:url(../images/pushen_dec03.jpg) repeat-x center top;
+    position:relative;
+}
+
+#share{
+    height:56px;
+}
+
