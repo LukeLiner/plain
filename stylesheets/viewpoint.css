@@ -101,14 +101,44 @@ body{
 /*banner 开始*/
 .banner{
   height:450px;
-  background:url(../images/newsdetail_banner.jpg) no-repeat center top;
+  background:url(../images/viewpoint_01.jpg) no-repeat center top;
   position:relative;
 }
 /*banner 结束*/
-/*新闻详情 开始*/
+/*新闻与观点 开始*/
+#shop{
+  border-bottom:1px solid #DDD9DA;
+}
+#shop ul{
+  overflow:hidden;
+}
+
+#shop ul li {
+  float: left;
+  width: 341px;
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+
+}
+#shop ul li a{
+  display:block;
+  font-size:18px;
+  text-decoration:none;
+  color:#B3B3B3;
+  line-height: 64px;
+}
+
+#shop ul li.current a {
+  line-height: 62px;
+  color: #85C9AB;
+  border-bottom: 3px solid;
+}
+
 div.info{
   overflow:hidden;
-  margin:0 29px 20px 27px;
+  margin:0 29px 30px 27px;
+  border-bottom:1px solid #D9D9D9;
 }
 
 div.bread_crumb{
@@ -122,66 +152,156 @@ div.info a{
   font-size:14px;
   color:#4D4D4D;
 }
-#news_detail div.news_title{
-  text-align:center;
-  height:39px;
-  border-bottom:1px solid #EFEFEF;
-  margin-bottom:32px;
+
+div.detail {
+  overflow:hidden;
+  margin-top: 55px;
+  position:relative;
 }
-#news_detail div.news_title h2{
+
+div.detail h2{
   font-size:24px;
-  line-height:28px;
-  color:#4D4D4D;
-  display:inline-block;
-}
-#news_detail div.news_title div{
-  margin-right:29px;
-}
-
-div.news_content p,.news_content h4{
-  line-height:20px;
-  font-size:14px;
-  color:#4D4D4D;
-  text-align:justify;
-  font-weight:normal;
-  margin:0 29px;
-}
-div.news_content h4.special{
-  margin-top:26px;
-}
-
-#close{
-  overflow:hidden;
-  height:29px;
-  font-size:12px;
-  color:#4D4D4D;
-  margin: 36px 29px 0;
-  border-bottom:1px solid #EEEEEE;
-}
-
-#close div.date a{
-  font-size:12px;
-  color:#4D4D4D;
-  text-decoration:none;
-}
-
-#close div.date a.current{
   color:#85C9AB;
+  line-height:28px;
+  margin-bottom:20px;
 }
 
-div.change{
+div.detail h2 b{
+  color:#194488;
+}
+
+div.detail>i{
+  position:absolute;
+  width:62px;
+  height:3px;
+  background:#84C9AC;
+  bottom:0;
+}
+
+div.news_box{
+  height:253px;
   overflow:hidden;
-  margin: 13px 29px 40px;
+  margin:0 29px 30px 27px;
+  border-bottom:1px dashed #D3D3D3;
 }
-div.change span,.change a{
-  font-size:4px;
-  line-height:8px;
+
+div.news_box img{
+  float:left;
+  margin-right:33px;
 }
-.change a{
+
+div.news_box .news_content{
+  width:626px;
+  height:220px;
+  overflow:hidden;
+}
+
+.news_content>h3{
+  font-size:20px;
+  font-weight:bold;
+  color:#000000;
+  line-height:24px;
+}
+.news_content p{
+  width: 600px;
+  line-height: 22px;
+  font-size: 14px;
+  text-align: justify;
+  margin: 19px 0 60px;
+}
+
+.news_content div.date{
+  width: 600px;
+  height: 29px;
+  line-height: 29px;
+}
+.news_content div.date a{
+  display: block;
+  float: right;
+  width: 56px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  font-size:14px;
+  color: #3C3C3C;
+  text-decoration: none;
+  border: 1px solid #3C3C3C;
+}
+
+.pager{
+  overflow:hidden;
+  height:30px;
+  line-height:30px;
+  margin-bottom:60px;
+}
+.news_more {
+  width:930px;
+  margin: 0 29px 30px 27px;
+  overflow:hidden;
+}
+.news_more ul li{
+  float:left;
+}
+
+.news_more ul li a{
+  display:block;
+  width:30px;
+  height:30px;
+  font-size:14px;
+  line-height:30px;
+  text-align:center;
+  color:#262626;
   text-decoration:none;
-  color:#4D4D4D;
 }
-/*新闻详情 结束*/
+
+.news_more ul li.current a{
+  text-decoration:underline;
+}
+.news_more ul li.first a{
+  width:60px;
+  height:28px;
+  line-height:30px;
+  border:1px solid #262626;
+  margin-right:20px;
+}
+
+.news_more ul li.last a{
+  width:60px;
+  height:28px;
+  line-height:30px;
+  border:1px solid #262626;
+  margin-left:20px;
+}
+
+.news_next{
+  float:right;
+  color:#262626;
+}
+.news_next span{
+  font-size:14px;
+  line-height:18px;
+  margin-right:8px;
+}
+.news_next>div{
+  float:right;
+  line-height:0;
+  position:relative;
+}
+.news_next>div input{
+  width:93px;
+  height:28px;
+  border:1px solid #262626;
+}
+.news_next>div a{
+  position:absolute;
+  top: 14px;
+  right: 0;
+  text-decoration: none;
+  width: 20px;
+  font-size:20px;
+  color:#262626;
+}
+/*新闻与观点 结束*/
 /*底部版权 开始*/
 #share{
   overflow:hidden;

@@ -101,14 +101,44 @@ body{
 /*banner 开始*/
 .banner{
   height:450px;
-  background:url(../images/newsdetail_banner.jpg) no-repeat center top;
+  background:url(../images/productdetail_01.jpg) no-repeat center top;
   position:relative;
 }
 /*banner 结束*/
-/*新闻详情 开始*/
+/*产品详情 开始*/
+#shop{
+  border-bottom:1px solid #DDD9DA;
+}
+#shop ul{
+  overflow:hidden;
+}
+
+#shop ul li {
+  float: left;
+  width: 256px;
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+
+}
+#shop ul li a{
+  display:block;
+  font-size:18px;
+  text-decoration:none;
+  color:#B3B3B3;
+  line-height: 64px;
+}
+
+#shop ul li.current a {
+  line-height: 62px;
+  color: #85C9AB;
+  border-bottom: 3px solid;
+}
+
 div.info{
   overflow:hidden;
-  margin:0 29px 20px 27px;
+  margin:0 29px 24px 27px;
+  border-bottom:1px solid #E8E8E8;
 }
 
 div.bread_crumb{
@@ -122,32 +152,132 @@ div.info a{
   font-size:14px;
   color:#4D4D4D;
 }
-#news_detail div.news_title{
-  text-align:center;
-  height:39px;
-  border-bottom:1px solid #EFEFEF;
-  margin-bottom:32px;
-}
-#news_detail div.news_title h2{
-  font-size:24px;
-  line-height:28px;
-  color:#4D4D4D;
-  display:inline-block;
-}
-#news_detail div.news_title div{
-  margin-right:29px;
+
+div.detail {
+  overflow:hidden;
+  margin-top: 55px;
+  position:relative;
 }
 
-div.news_content p,.news_content h4{
-  line-height:20px;
-  font-size:14px;
-  color:#4D4D4D;
-  text-align:justify;
-  font-weight:normal;
-  margin:0 29px;
+div.detail h2{
+  font-size:24px;
+  color:#85C9AB;
+  line-height:28px;
+  margin-bottom:20px;
 }
-div.news_content h4.special{
-  margin-top:26px;
+
+div.detail h2 b{
+  color:#194488;
+}
+/*产品大图 展示左侧*/
+#product_intro{
+  overflow:hidden;
+  margin:0 29px 12px 27px;
+}
+
+#preview{
+  float:left;
+  overflow:hidden;
+}
+#preview p{
+  width:429px;
+  height:274px;
+  border:1px solid #E5E5E5;
+  margin-bottom:15px;
+  text-align:center;
+  box-shadow: 0 5px 5px #F0F0F0;
+}
+#preview div{
+  width:429px;
+  height:74px;
+}
+
+#preview ul li{
+  float:left;
+  width:81px;
+  text-align:center;
+}
+#preview ul li.spacing{
+  margin-right:6px;
+}
+#preview ul li img{
+  width:79px;
+  height:72px;
+  border:1px solid #E5E5E5;
+}
+#preview ul li img:hover{
+  border:1px solid #e4393c;
+}
+
+#summary{
+  float:left;
+  margin-left:22px;
+}
+
+#summary li{
+  height:50px;
+  line-height:50px;
+  border-bottom:1px dotted #DBDBDB;
+}
+
+#summary li.first{
+  border-bottom:none;
+}
+
+#summary li.last b{
+  font-size:16px;
+  border-bottom:none;
+  color:#85CAAB;
+}
+
+#summary li span{
+  font-size:16px;
+  color:#272727;
+  font-weight:bold;
+  line-height:20px;
+}
+
+#summary li b{
+  font-size:16px;
+  color:#272727;
+  font-weight:normal;
+  line-height:20px;
+}
+
+#product_info{
+  overflow:hidden;
+  margin:-55px 29px 24px 0;
+}
+
+#product_info div.detail{
+  border-bottom:1px dashed #DBDBDB;
+  margin-bottom:20px;
+}
+#product_info p{
+  font-size:14px;
+  color:#656565;
+  line-height:18px;
+  margin-left:18px;
+}
+#product_info p a{
+  font-size:14px;
+  text-decoration:none;
+  color:#656565;
+  line-height:18px;
+}
+
+#product_info .detail .description{
+  margin-bottom:57px;
+}
+#product_info .detail .description h4{
+  padding-left:18px;
+  font-size:16px;
+  line-height:45px;
+  color:#272727;
+  height:45px;
+  font-weight:normal;
+  background:#EEEEEE;
+  margin-bottom:25px;
 }
 
 #close{
@@ -155,8 +285,6 @@ div.news_content h4.special{
   height:29px;
   font-size:12px;
   color:#4D4D4D;
-  margin: 36px 29px 0;
-  border-bottom:1px solid #EEEEEE;
 }
 
 #close div.date a{
@@ -168,20 +296,7 @@ div.news_content h4.special{
 #close div.date a.current{
   color:#85C9AB;
 }
-
-div.change{
-  overflow:hidden;
-  margin: 13px 29px 40px;
-}
-div.change span,.change a{
-  font-size:4px;
-  line-height:8px;
-}
-.change a{
-  text-decoration:none;
-  color:#4D4D4D;
-}
-/*新闻详情 结束*/
+/*产品详情 结束*/
 /*底部版权 开始*/
 #share{
   overflow:hidden;

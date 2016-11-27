@@ -101,14 +101,15 @@ body{
 /*banner 开始*/
 .banner{
   height:450px;
-  background:url(../images/newsdetail_banner.jpg) no-repeat center top;
+  background:url(../images/contact_01.jpg) no-repeat center top;
   position:relative;
 }
 /*banner 结束*/
-/*新闻详情 开始*/
+/*新闻列表 开始*/
+
 div.info{
   overflow:hidden;
-  margin:0 29px 20px 27px;
+  margin:0 29px 38px 27px;
 }
 
 div.bread_crumb{
@@ -122,66 +123,74 @@ div.info a{
   font-size:14px;
   color:#4D4D4D;
 }
-#news_detail div.news_title{
-  text-align:center;
-  height:39px;
-  border-bottom:1px solid #EFEFEF;
-  margin-bottom:32px;
+
+div.detail {
+  float:left;
 }
-#news_detail div.news_title h2{
-  font-size:24px;
-  line-height:28px;
-  color:#4D4D4D;
+
+div.detail h2{
+  position:relative;
   display:inline-block;
-}
-#news_detail div.news_title div{
-  margin-right:29px;
-}
-
-div.news_content p,.news_content h4{
-  line-height:20px;
-  font-size:14px;
-  color:#4D4D4D;
-  text-align:justify;
-  font-weight:normal;
-  margin:0 29px;
-}
-div.news_content h4.special{
-  margin-top:26px;
-}
-
-#close{
-  overflow:hidden;
-  height:29px;
-  font-size:12px;
-  color:#4D4D4D;
-  margin: 36px 29px 0;
-  border-bottom:1px solid #EEEEEE;
-}
-
-#close div.date a{
-  font-size:12px;
-  color:#4D4D4D;
-  text-decoration:none;
-}
-
-#close div.date a.current{
+  line-height:28px;
+  margin-bottom:20px;
+  font-size:24px;
   color:#85C9AB;
 }
 
-div.change{
-  overflow:hidden;
-  margin: 13px 29px 40px;
+div.detail h2.capital{
+  margin-top:55px;
 }
-div.change span,.change a{
-  font-size:4px;
-  line-height:8px;
+div.detail h2 b{
+  color:#194488;
 }
-.change a{
-  text-decoration:none;
+
+div.detail h2 i{
+  position:absolute;
+  right:-34px;
+  top:3px;
+  width:24px;
+  height:24px;
+  background:url("../images/cooperationArrow.jpg") no-repeat;
+}
+
+div.detail p{
+  font-size:14px;
   color:#4D4D4D;
+  height:20px;
+  line-height:20px;
+  text-align:justify;
 }
-/*新闻详情 结束*/
+
+div.detail  p.last{
+  margin-bottom:26px;
+}
+
+#taskContent{
+  width:100%;
+}
+textarea.task_Content{
+  width:97%;
+  height: 198px;
+  font-size: 14px;
+  padding: 10px;
+  resize: none;
+  margin-bottom:13px;
+}
+div#button_box{
+  width: 134px;
+  float: right;
+  height: 50px;
+  background: #84C9AC;
+  text-align: center;
+  line-height: 50px;
+}
+
+div#button_box>a{
+  color:#ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*新闻列表 结束*/
 /*底部版权 开始*/
 #share{
   overflow:hidden;

@@ -36,7 +36,6 @@ div.bread_crumb a{
 
 div.info{
     overflow:hidden;
-    /*margin:0 29px 38px 27px;*/
 }
 div.detail {
     text-align: center;
@@ -68,7 +67,6 @@ div.detail p{
     margin-right: 20px;
     margin-bottom: 20px;
     float: left;
-    /*display: inline;*/
 }
 
 /*跳转页面*/
