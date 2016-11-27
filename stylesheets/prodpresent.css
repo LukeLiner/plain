@@ -13,8 +13,7 @@ a {
 
 /*banner 开始*/
 .banner-dec{
-    background:url(../images/pushen_dec03.jpg) repeat-x center top;
-    position:relative;
+    background:url(../images/bg_banner_450.png) repeat-x center top;
 }
 
 /*更改大水平导航栏宽度*/

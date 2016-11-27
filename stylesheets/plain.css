@@ -1,110 +1,10 @@
 @charset "UTF-8";
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{
-  margin:0;
-  padding:0
-}
-
-ul, ol, dl, dd, dt, li{
-  list-style:none;
-}
-
-.fl{
-  float:left;
-}
-
-.fr{
-  float:right;
-}
-
-.clear{
-  clear:both;
-}
-
-input,button,img{
-  border:none;
-}
-body{
-  font:14px "Microsoft YaHei", "arial", "SimSun";
-}
-
-.wrapper{
-  width:1024px;
-  margin:0 auto;
-  height:100%;
-}
-
-/*导航 开始*/
-#header{
-  height:124px;
-  background:#ffffff;
-  position:relative;
-}
-
-#nav{
-  width:1024px;
-  position:absolute;
-  height:52px;
-  top:50%;
-  left:50%;
-  margin:-26px 0 0 -512px;
-}
- #nav ul{
-   overflow:hidden;
-   width:1024px;
-   position:absolute;
-   height:52px;
-   top:50%;
-   left:50%;
-   margin:-26px 0 0 -512px;
- }
-#nav ul li{
-  float:left;
-  height:52px;
-  line-height:52px;
-  margin-right:76px;
-  position:relative;
-}
-
-#nav ul li.product{
-  margin-right:0;
-}
-
-#nav ul li.store{
-  margin-right:0;
-}
-
-#nav ul li.logo{
-  margin:0 56px;
-}
-
-#nav ul li a{
-  display:block;
-  height:100%;
-  width:100%;
-  font-size:14px;
-  font-weight:bold;
-  text-decoration:none;
-  color:#000;
-}
-
-#nav ul li i{
-  display:block;
-  position:absolute;
-  width:15px;
-  height:15px;
-  top:20px;
-  left:85px;
-  background:url("../images/pushen_06.png") no-repeat;
-}
-
-/*导航 结束*/
 /*banner 开始*/
 .banner{
-  height:576px;
-  background:url(../images/pushen_a1.jpg) no-repeat center top;
+  background:url(../images/index_banner_bg.png) no-repeat  center top;
   position:relative;
 }
-
+/*轮播图 小圆点*/
 .banner .circles{
   width:64px;
   height:16px;
@@ -112,11 +12,6 @@ body{
   bottom:26px;
   left:50%;
   margin-left:-32px;
-}
-
-.banner .circles ol{
-  padding-top:3px;
-  list-style:none;
 }
 
 .banner .circles ol li{
@@ -245,6 +140,7 @@ body{
 }
 
 /*加入方式 结束*/
+
 /*产品介绍 开始*/
 #more{
   overflow:hidden;
@@ -331,134 +227,3 @@ body{
   margin-bottom:75px;
 }
 /*产品介绍 结束*/
-/*底部版权 开始*/
-#share{
-  overflow:hidden;
-  line-height:56px;
-  position:relative;
-  background:#f2f2f2;
-}
-
-#share ul{
-  overflow:hidden;
-  position:absolute;
-  width:180px;
-  height:46px;
-  float:left;
-  top:50%;
-  margin-top:-23px;
-}
-
-#share ul li{
-  width:44px;
-  height:45px;
-  margin-right:10px;
-}
-
-#share ul li a{
-  display:block;
-  height:100%;
-}
-
-#share ul li.sina{
-  background:url("../images/pushen_48.png") no-repeat;
-}
-
-#share ul li.wechat{
-  background:url("../images/pushen_50.png") no-repeat;
-}
-
-#share ul li.quaro{
-  background:url("../images/pushen_52.png") no-repeat;
-}
-
-#share a > img{
-  vertical-align:middle;
-}
-
-/*版权信息*/
-#copyright{
-  overflow:hidden;
-  height:206px;
-  background:#e6e6e6;
-}
-
-#top{
-  overflow:hidden;
-  height:166px;
-  border-bottom:1px solid #878787;
-}
-
-#top ul{
-  width:195px;
-  float:left;
-  margin: 27px 0 25px;
-}
-
-#top ul li {
-  line-height:32px;
-  position:relative;
-}
- #top ul li b{
-   font-size:18px;
-   color:#333333;
-   font-weight:bold;
-   line-height:43px;
- }
-#top a{
-  font-size:14px;
-  color:#737373;
-  text-decoration:none;
-}
-
-#top p{
-  position:absolute;
-  width:36px;
-  height:4px;
-  background:url(../images/foot_green.jpg) no-repeat;
-}
-
-#bottom{
-  color:#727272;
-  margin-top:8px;
-}
-#bottom a{
-  color:#727272;
-  text-decoration:none;
-}
-#bottom span{
-  margin:0 10px 0 7px;
-}
-/*底部版权 结束*/
-/*水平导航样式开始*/
-.horizontal{
-  border-bottom:1px solid #DDD9DA;
-}
-.horizontal ul{
-  overflow:hidden;
-}
-
-.horizontal ul li {
-  float: left;
-  width: 341px;
-  height: 64px;
-  text-align: center;
-  line-height: 64px;
-
-}
-.horizontal ul li a{
-  display:block;
-  font-size:18px;
-  text-decoration:none;
-  color:#B3B3B3;
-  line-height: 64px;
-}
-
-.horizontal ul li.current a {
-  line-height: 62px;
-  color: #85C9AB;
-  border-bottom: 3px solid;
-}
-/*水平导航样式开始*/
-
-

@@ -44,12 +44,9 @@ div.info a {
 /*导航 结束*/
 /*banner 开始*/
 .banner-dec{
-    height:445px;
-    background:url(../images/pushen_dec03.jpg) repeat-x center top;
-    position:relative;
+    background:url(../images/bg_banner_450.png) no-repeat center top;
 }
 
 #share{
     height:56px;
 }
-
