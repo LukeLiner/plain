@@ -5,6 +5,7 @@
 	<title>PLAIN朴生</title>
   <link rel="stylesheet" href="stylesheets/global.css"/>
 	<link rel="stylesheet" href="stylesheets/plain.css">
+
 </head>
 <body>
 	<!-- 导航 开始-->
@@ -57,16 +58,32 @@
 	<!-- banner 开始 -->
 	<div class="banner">
     <div class="wrapper">
-      <a href="#"><img src="images/index_banner.jpg" alt=""/></a>
+      <div class="slideShow">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/index_banner.jpg" alt=""/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/contact_banner.jpg" alt=""/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/viewpoint_banner.jpg" alt=""/>
+            </a>
+          </li>
+        </ul>
+        <div class="circles showNav">
+          <span></span>
+          <span class="active"></span>
+          <span class="last"></span>
+        </div>
+      </div>
     </div>
-		<div class="circles">
-			<ol>
-				<li></li>
-				<li  class="current"></li>
-				<li class="last"></li>
-			</ol>
-		</div>
-	</div>
+  </div>
 	<!-- banner 结束 -->
 	<!-- 商店介绍 开始 -->
 	<div id="list" class="wrapper">
@@ -118,18 +135,23 @@
 	</div>
 	<!-- 加入方式 结束 -->
 	<!-- 产品介绍 开始 -->
-		<div id="more" class="wrapper">
+		<div id="new_product" class="wrapper public">
 			<div class="circles">
-				<ol>
-					<li></li>
-					<li class="current"></li>
-					<li class="last"></li>
-				</ol>
+				<ul id="tabs_menu">
+					<li><a href="javascript:;"></a></li>
+					<li class="current"><a href="javascript:;"></a></li>
+					<li class="last"><a href="javascript:;"></a></li>
+				</ul>
 			</div>
 			<span><b>新品</b>推荐</span>
 			<a href="#">点击更多</a>
 		</div>
-		<div class="wrapper" id="product">
+
+    <div id="menu_con">
+      <div class="wrapper">
+        第一页内容：具体产品展示区，请添加具体产品
+    </div>
+		<div class="wrapper product">
         <ul>
           <li class="tree">
             <a href="productDetail.html">
@@ -153,6 +175,12 @@
           </li>
         </ul>
 		</div>
+    <div class="wrapper">
+      第三页内容：具体产品展示区，请添加具体产品
+
+    </div>
+      </div>
+
 	<!-- 产品介绍 结束 -->
 	<!-- 底部版权 开始 -->
 		<footer>
@@ -222,5 +250,33 @@
 			</div>
 		</footer>
 	<!-- 底部版权 结束 -->
+  <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="js/myScript.js"></script>
+  <script>
+    $(document).ready(function(){
+      var slideShow=$(".slideShow"),  //获取最外层框架的名称
+          ul=slideShow.find("ul"),
+          showNumber=slideShow.find(".showNav span"),//获取按钮
+          oneWidth=slideShow.find("ul li").eq(0).width(); //获取每个图片的宽度
+      var timer=null;
+      var iNow=0;  //iNow为正在展示的图片索引值，当用户打开网页时首先显示第一张图，即索引值为0
+
+      showNumber.on("click",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        var index=$(this).index();
+        ul.animate({
+          "left":-oneWidth*iNow
+        })
+      });
+
+      timer=setInterval(function(){
+        iNow++;
+        if(iNow>showNumber.length-1){
+          iNow=0;
+        }
+        showNumber.eq(iNow).trigger("click");
+      },3000);
+    })
+  </script>
 </body>
 </html>

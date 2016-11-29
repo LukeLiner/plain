@@ -1,11 +1,11 @@
+.public ul li {
+  width:256px;
+}
+div.info{
+  overflow:hidden;
+  margin:0 29px 38px 27px;
+}
 
-.horizontal-width ul li {
-    width: 241px;
-}
-div.bread_crumb{
-    float:right;
-    margin:22px 0 16px 0;
-}
 div.info a {
     line-height: 18px;
     text-decoration: none;
@@ -41,6 +41,12 @@ div.info a {
   margin-bottom: 89px;
 }
 
+#menu_con>div{
+  display:none;
+}
+#menu_con>div.first_child{
+  display:block;
+}
 /*导航 结束*/
 /*banner 开始*/
 .banner-dec{

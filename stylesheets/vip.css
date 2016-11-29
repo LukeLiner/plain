@@ -5,43 +5,13 @@
 }
 /*banner 结束*/
 /*会员部分 开始*/
-#vip{
-  border-bottom:1px solid #DDD9DA;
-}
-#vip ul{
-  overflow:hidden;
-}
-
-#vip ul li {
-  float: left;
+.public ul li {
   width: 512px;
-  height: 64px;
-  text-align: center;
-  line-height: 64px;
-
-}
-#vip ul li a{
-  display:block;
-  font-size:18px;
-  text-decoration:none;
-  color:#B3B3B3;
-  line-height: 64px;
-}
-
-#vip ul li.current a {
-  line-height: 62px;
-  color: #85C9AB;
-  border-bottom: 3px solid;
 }
 
 div.info{
   overflow:hidden;
   margin:0 29px 38px 27px;
-}
-
-div.bread_crumb{
-  float:right;
-  margin:22px 0 16px 0;
 }
 
 div.info a{
@@ -51,7 +21,11 @@ div.info a{
   color:#4D4D4D;
 }
 
-div.detail {
+#menu_con>div{
+  display:none;
+}
+#menu_con>div.first_child{
+  display:block;
   float:left;
 }
 

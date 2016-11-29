@@ -101,36 +101,75 @@ body{
 
 /*头部导航样式 结束*/
 /*水平导航样式开始*/
-.horizontal{
+/*.horizontal{*/
+  /*border-bottom:1px solid #DDD9DA;*/
+/*}*/
+/*.horizontal ul{*/
+  /*overflow:hidden;*/
+/*}*/
+
+/*.horizontal ul li {*/
+  /*float: left;*/
+  /*width: 341px;*/
+  /*height: 64px;*/
+  /*text-align: center;*/
+  /*line-height: 64px;*/
+
+/*}*/
+/*.horizontal ul li a{*/
+  /*display:block;*/
+  /*font-size:18px;*/
+  /*text-decoration:none;*/
+  /*color:#B3B3B3;*/
+  /*line-height: 64px;*/
+/*}*/
+
+/*.horizontal ul li.current a {*/
+  /*line-height: 62px;*/
+  /*color: #85C9AB;*/
+  /*border-bottom: 3px solid;*/
+/*}*/
+
+.public{
   border-bottom:1px solid #DDD9DA;
 }
-.horizontal ul{
+
+.public ul{
   overflow:hidden;
 }
 
-.horizontal ul li {
+.public ul li {
   float: left;
-  width: 341px;
   height: 64px;
   text-align: center;
   line-height: 64px;
-
+  cursor:pointer;
 }
-.horizontal ul li a{
-  display:block;
-  font-size:18px;
+.public ul li a{
   text-decoration:none;
+  font-size:18px;
   color:#B3B3B3;
-  line-height: 64px;
 }
 
-.horizontal ul li.current a {
-  line-height: 62px;
+.public ul li.current {
   color: #85C9AB;
   border-bottom: 3px solid;
 }
+.public ul li.current a {
+  font-size:20px;
+  color: #85C9AB;
+}
 /*水平导航样式开始*/
+/*面包屑 开始*/
+div.bread_crumb{
+  float:right;
+  margin:22px 0 16px 0;
+}
 
+div.bread_crumb a:hover{
+  color:#85c9ab;
+}
+/*面包屑 结束*/
 /*底部版权 开始*/
 #share{
   overflow:hidden;
@@ -230,7 +269,6 @@ body{
   margin:0 10px 0 7px;
 }
 /*底部版权 结束*/
-
 
 
 

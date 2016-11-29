@@ -4,7 +4,6 @@
   <meta charset="utf-8"/>
     <title>产品介绍</title>
     <link rel="stylesheet" href="stylesheets/global.css"/>
-    <link rel="stylesheet" href="stylesheets/plain.css">
     <link rel="stylesheet" href="stylesheets/prodpresent.css">
 </head>
 <body>
@@ -63,35 +62,41 @@
     </div>
     <!-- 轮播图 结束 -->
     <!-- 产品介绍 开始 -->
+    <div id="" class="public">
+      <ul id="tabs_menu" class="wrapper">
+        <li class="current"><a href="javascript:;">生活用品</a></li>
+        <li><a href="javascript:;">家居用品</a></li>
+        <li><a href="javascript:;">家居装饰</a></li>
+        <li><a href="javascript:;">环境改善</a></li>
+      </ul>
+    </div>
+
     <div class="wrapper" >
         <div class="info">
-            <div class="horizontal horizontal-width">
-                <ul class="wrapper">
-                    <li class="current"><a href="#">生活用品</a></li>
-                    <li><a href="#">家居用品</a></li>
-                    <li><a href="#">家居装饰</a></li>
-                    <li><a href="#">环境改善</a></li>
-                </ul>
-            </div>
             <div class="bread_crumb">
                 <a href="index.html">首页</a>
                 <span>&gt;</span>
                 <a href="#">产品介绍</a>
             </div>
-            <div class="detail">
+              <div class="detail">
                 <h2><b>生活</b>用品</h2>
-                <div class="prods-wrapper">
-                    <div class="single start">
-                      <a href="productDetail.html"><img src="images/pushen_dec04.jpg" height="211" width="308"/></a>
+                <div id="menu_con">
+                  <div class="prods-wrapper first_child">
+                      <div class="single start">
+                        <a href="productDetail.html"><img src="images/pushen_dec04.jpg" height="211" width="308"/></a>
                         <b>iDoctor智能血压计</b>
                         <p>￥510.00</p>
-                    </div>
-                    <div class="single"></div>
-                    <div class="single end"></div>
-                    <div class="single start"></div>
-                    <div class="single"></div>
-                    <div class="single end"></div>
-                </div>
+                      </div>
+                      <div class="single"></div>
+                      <div class="single end"></div>
+                      <div class="single start"></div>
+                      <div class="single"></div>
+                      <div class="single end"></div>
+                  </div>
+                  <div class="wrapper">家居用品具体产品展示区，请添加内容</div>
+                  <div class="wrapper">家居装饰具体产品展示区，请添加内容</div>
+                  <div class="wrapper">环境改善具体产品展示区，请添加内容</div>
+              </div>
                 <div class="ps_bottomPage">
                     <span class="b-num">
                         <a href="javascript:;" class="curr">1</a>
@@ -109,10 +114,11 @@
 
                     </span>
                 </div>
-            </div>
+              </div>
+
         </div>
     </div>
-    </div>
+
 
 
     <!-- 底部版权 开始 -->
@@ -183,10 +189,7 @@
         </div>
     </footer>
     <!-- 底部版权 结束 -->
-<script type="application/javascript">
-    function serachPage() {
-        alert("to next page");
-    }
-</script>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/myScript.js"></script>
 </body>
 </html>

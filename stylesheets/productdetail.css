@@ -5,44 +5,14 @@
 }
 /*banner 结束*/
 /*产品详情 开始*/
-#shop{
-  border-bottom:1px solid #DDD9DA;
-}
-#shop ul{
-  overflow:hidden;
-}
-
-#shop ul li {
-  float: left;
+.public ul li {
   width: 256px;
-  height: 64px;
-  text-align: center;
-  line-height: 64px;
-
-}
-#shop ul li a{
-  display:block;
-  font-size:18px;
-  text-decoration:none;
-  color:#B3B3B3;
-  line-height: 64px;
-}
-
-#shop ul li.current a {
-  line-height: 62px;
-  color: #85C9AB;
-  border-bottom: 3px solid;
 }
 
 div.info{
   overflow:hidden;
   margin:0 29px 24px 27px;
   border-bottom:1px solid #E8E8E8;
-}
-
-div.bread_crumb{
-  float:right;
-  margin:22px 0 16px 0;
 }
 
 div.info a{

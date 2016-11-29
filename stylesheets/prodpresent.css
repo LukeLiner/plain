@@ -17,26 +17,35 @@ a {
 }
 
 /*更改大水平导航栏宽度*/
-.horizontal-width ul li {
-    width: 241px;
+/*.horizontal-width ul li {*/
+    /*width: 241px;*/
+/*}*/
+.public ul li{
+  width: 256px;
 }
 /*更改小水平导航栏宽度*/
-div.bread_crumb{
-    /*float:right;*/
-    text-align: right;
-    margin:22px 0 16px 0;
-}
-div.bread_crumb a{
-    line-height: 18px;
-    text-decoration: none;
-    font-size: 14px;
-    color: #4D4D4D;
+div.info{
+  overflow:hidden;
 }
 
-div.info{
-    overflow:hidden;
+div.info a {
+  line-height: 18px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #4D4D4D;
+}
+
+div.info div.bread_crumb{
+  margin-right:29px;
+}
+#menu_con>div{
+  display:none;
+}
+#menu_con>div.first_child{
+  display:block;
 }
 div.detail {
+    float:right;
     text-align: center;
 }
 div.detail h2{

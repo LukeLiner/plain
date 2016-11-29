@@ -4,31 +4,51 @@
   background:url(../images/index_banner_bg.png) no-repeat  center top;
   position:relative;
 }
+
+.slideShow{
+  width:1024px;
+  height:576px;
+  position:relative;
+  overflow:hidden;
+}
+
+.slideShow ul{
+  width:3072px;
+  position:relative;
+}
+.slideShow ul li{
+  width:1024px;
+  float:left;
+}
+
+
 /*轮播图 小圆点*/
 .banner .circles{
   width:64px;
   height:16px;
   position:absolute;
-  bottom:26px;
+  bottom:22px;
   left:50%;
   margin-left:-32px;
 }
 
-.banner .circles ol li{
+.banner .circles span{
   float:left;
-  width:12px;
-  height:12px;
+  width: 6px;
+  height: 6px;
+  border:3px solid #85c9ab;
   _font-size:0;
-  background:url(../images/pushen_kong.jpg) no-repeat;
+  border-radius:50%;
   margin-right:9px;
   cursor:pointer;
 }
 
-.banner .circles ol li.current{
-  background:url(../images/pushen_shi.jpg) no-repeat;
+.banner .circles span.active{
+  background:#85c9ab;
+  border-color:#85c9ab;
 }
 
-.banner .circles ol li.last{
+.banner .circles span.last{
   margin-right:0;
 }
 
@@ -142,14 +162,18 @@
 /*加入方式 结束*/
 
 /*产品介绍 开始*/
-#more{
+#new_product{
   overflow:hidden;
   text-align:center;
   position:relative;
   border-bottom:1px solid #E6E6E6;
 }
+
+#new_product a:hover{
+  color:#85c9ab;
+}
   /*绘制小圆点*/
-#more div.circles{
+#new_product div.circles{
   width:50px;
   height:12px;
   position:absolute;
@@ -157,36 +181,38 @@
   bottom:14px;
 }
 
-#more div.circles ol li{
-  float:left;
+#new_product div.circles ul li{
+  width:0;
+  height:0;
   _font-size:0;
   border:5px solid #b3b3b3;
   border-radius:50%;
   margin-right:9px;
-  cursor:pointer;
+  margin-top: 8px;
+  float:left;
 }
 
-#more div.circles ol li.current{
+#new_product div.circles ul li.current{
   border-color:#85c7ab;
 }
 
-#more div.circles ol li.last{
+#new_product div.circles ul li.last{
   margin-right:0;
 }
 /*新品推荐*/
-#more > span{
+#new_product > span{
   display:inline-block;
   font-size:24px;
   line-height:48px;
   color:#b3b3b3;
 }
 
-#more > span b{
+#new_product > span b{
   font-style:normal;
   color:#83C8AA;
 }
 /*点击更多*/
-#more > a{
+#new_product > a{
   display:inline-block;
   line-height:48px;
   float:right;
@@ -195,33 +221,37 @@
 }
 
 /*产品*/
-#product{
+#menu_con>div{
+  display:none;
+}
+#menu_con div.product{
   overflow:hidden;
+  display:block;
 }
 
-#product ul li{
+.product ul li{
   float:left;
 }
 
-#product ul li.tree{
+.product ul li.tree{
   border:1px solid #f5f5f5;
   height:454px;
   margin:18px 7px 75px 0;
 }
 
-#product ul li.bamboo{
+.product ul li.bamboo{
   border:1px solid #f5f5f5;
   height:224px;
   margin:17px 5px 5px 0;
 }
 
-#product ul li.chair{
+.product ul li.chair{
   border:1px solid #f5f5f5;
   height:224px;
   margin:17px 0 5px 0;
 }
 
-#product ul li.box{
+.product ul li.box{
   border:1px solid #f5f5f5;
   height:224px;
   margin-bottom:75px;
