@@ -254,6 +254,7 @@
   <script type="text/javascript" src="js/myScript.js"></script>
   <script>
     $(document).ready(function(){
+     
       var slideShow=$(".slideShow"),  //获取最外层框架的名称
           ul=slideShow.find("ul"),
           showNumber=slideShow.find(".showNav span"),//获取按钮
@@ -262,21 +263,29 @@
       var iNow=0;  //iNow为正在展示的图片索引值，当用户打开网页时首先显示第一张图，即索引值为0
 
       showNumber.on("click",function(){
-        $(this).addClass("active").siblings().removeClass("active");
         var index=$(this).index();
-        ul.animate({
-          "left":-oneWidth*iNow
-        })
+        loopPics(index);
+        iNow = index + 1;
       });
 
       timer=setInterval(function(){
-        iNow++;
         if(iNow>showNumber.length-1){
           iNow=0;
         }
-        showNumber.eq(iNow).trigger("click");
+        loopPics(iNow);
+        iNow++;
       },3000);
+
+      //图片轮播方法
+      function loopPics(iNow) {
+        $(showNumber.get(iNow)).addClass("active").siblings().removeClass("active");
+         ul.animate({
+            "left":-oneWidth*iNow
+          })
+      }
     })
+
+
   </script>
 </body>
 </html>
